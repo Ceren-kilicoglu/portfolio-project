@@ -1,12 +1,21 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}"
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'yellw': '#CBF281',
+      },
+      width: {
+        'wid-px': '1440px',
+      },
+      height: {
+        'hgt-px': '671 px',
+      }
+    },
   },
+  darkMode: 'selector',
   plugins: [],
 }
-
