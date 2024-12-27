@@ -1,6 +1,8 @@
 import React from "react"
-import Theme from "./components/Theme"
 import Hero from "./components/Hero"
+import Skills from "./components/Skills"
+import './index.css';
+
 
 
 
@@ -9,10 +11,11 @@ function App() {
 
   return (
     <>
-      <div>
+      <div >
         <Hero />
-        <Theme />
-      </div>
+        <Skills />
+      </div >
+
     </>
   )
 }

@@ -1,8 +1,9 @@
 :root {
-
     font-family: "Barlow", serif;
 
 }
+
+
 
 @tailwind base;
 @tailwind components;
