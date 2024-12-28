@@ -1,0 +1,27 @@
+{
+    "heading": "Send me a message!",
+    "prompt": "Got a question or proposal, or just want to say hello? Go ahead.",
+    "email": "almilasucode@gmail.com",
+    "socialIcons": [
+        {
+            "name": "Twitter",
+            "icon": "faTwitter",
+            "link": "https://twitter.com/username"
+        },
+        {
+            "name": "Dribbble",
+            "icon": "faDribbble",
+            "link": "https://dribbble.com/username"
+        },
+        {
+            "name": "Email",
+            "icon": "faEnvelope",
+            "link": "mailto:almilasucode@gmail.com"
+        },
+        {
+            "name": "Instagram",
+            "icon": "faInstagram",
+            "link": "https://instagram.com/username"
+        }
+    ]
+}

@@ -9,14 +9,9 @@ export default {
       colors: {
         'yellw': '#CBF281',
         "bl": "#4731D3",
+        "whit": "#FFFFFF",
+        "dark-bl": "#3730A3"
 
-      },
-      height: {
-        "profile-h": "600px",
-
-      },
-      width: {
-        "skills-w": "960px"
       }
     },
   },

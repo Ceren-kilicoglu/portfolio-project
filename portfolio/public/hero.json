@@ -1,0 +1,25 @@
+{
+    "languageToggle": {
+        "text": "TÜRKÇE'YE GEÇ"
+    },
+    "profile": {
+        "name": "ceren",
+        "title": "I am a Frontend Developer...",
+        "description": "who likes to craft solid and scalable frontend products with great user experiences."
+    },
+    "buttons": {
+        "github": {
+            "text": "Github",
+            "icon": "faGithub",
+            "link": "https://github.com/Ceren-kilicoglu"
+        },
+        "linkedin": {
+            "text": "Linkedin",
+            "icon": "faLinkedinIn",
+            "link": "https://www.linkedin.com/in/ceren-k%C4%B1l%C4%B1coglu-6158121bb/"
+        }
+    },
+    "darkModeToggle": {
+        "text": "DARK MODE"
+    }
+}
