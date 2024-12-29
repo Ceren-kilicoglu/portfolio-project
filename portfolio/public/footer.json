@@ -1,7 +1,7 @@
 {
     "heading": "Send me a message!",
     "prompt": "Got a question or proposal, or just want to say hello? Go ahead.",
-    "email": "almilasucode@gmail.com",
+    "email": "cern.yaa@gmail.com",
     "socialIcons": [
         {
             "name": "Twitter",
@@ -9,14 +9,14 @@
             "link": "https://twitter.com/username"
         },
         {
-            "name": "Dribbble",
-            "icon": "faDribbble",
-            "link": "https://dribbble.com/username"
+            "name": "Codepen",
+            "icon": "faCodepen",
+            "link": ""
         },
         {
             "name": "Email",
-            "icon": "faEnvelope",
-            "link": "mailto:almilasucode@gmail.com"
+            "icon": "faAt",
+            "link": ""
         },
         {
             "name": "Instagram",

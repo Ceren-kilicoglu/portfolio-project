@@ -27,17 +27,17 @@ const Hero = () => {
   const { profile, buttons, languageToggle, darkModeToggle } = heroData;
 
   return (
-    <div className='hero-container flex '>
-      <div className="hero-blue-section  h-[671px]  w-[1440px] bg-bl">
-        <div className="language-theme-switch text-[15px] h-[18px] w-[138px] absolute top-[35px] left-[851px] font-semibold">
+    <div className='hero-container flex overflow-hidden'>
+      <div className="hero-blue-section  h-[671px]  w-[1550px] bg-bl">
+        <div className="language-theme-switch text-[15px] h-[18px] w-[138px] absolute top-[35px] left-[895px] font-semibold">
           <button className="language-toggle  ">
             <span className="language-text text-yellw">{languageToggle.text}</span>
           </button>
         </div>
-        <div className='hero-name-section w-[960px] h-[72px] absolute top-[37px] left-[239px]' >
+        <div className='hero-name-section w-[960px] h-[72px] absolute top-[37px] left-[280px]' >
           <h2 className="hero-name w-[700] text-[32px] leading-[72px] text-yellw font-bold">{profile.name}</h2>
         </div>
-        <div className='hero-content  w-[955px] h-[375.89px] absolute top-[148px] left-[239px] flex justify-between'>
+        <div className='hero-content  w-[955px] h-[375.89px] absolute top-[148px] left-[280px] flex justify-between'>
           <div className='hero-content-left  pt-24 '>
             <h1 className="hero-title  w-[528.88px] h-[118px] text-yellw text-[54px] leading-[59.4px] font-bold">{profile.title}</h1>
             <p className="hero-description pt-8 w-[528.88px] h-[58px] font-normal text-[24px] leading-[29.05px] text-whit ">{profile.description}</p>
@@ -76,7 +76,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="green-container  h-[671px] w-[710px] left-[1008px] bg-yellw ">
-        <div className="theme-switch mx-4 my-8 flex items-center space-x-2 ">
+        <div className="theme-switch mx-8 my-8 flex items-center space-x-2 ">
           <button className="theme-toggle w-[55px] h-[24px] bg-[#8F88FF] dark:bg-g-700 rounded-full flex items-center p-1">
             <div className="theme-indicator w-4 h-4 bg-yellow-300 rounded-full"></div>
           </button>

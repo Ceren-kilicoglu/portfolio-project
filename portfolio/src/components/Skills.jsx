@@ -16,8 +16,8 @@ const Skills = () => {
     }, []);
 
     return (
-        <div className="skills-container w-[1440px] h-[671px] ">
-            <div className=" flex justify-between w-[1000px] h-[430px] absolute top-[755px] left-[239px]  ">
+        <div className="skills-container w-[1440px] h-[671px] overflow-hidden">
+            <div className=" flex justify-between w-[1000px] h-[430px] absolute top-[755px] left-[280px]  ">
 
                 <h2 className=" w-[128px] h-[58px] text-[#4832D3]  font-bold text-[48px] leading-[58.09px] ">Skills</h2>
                 <div className=" grid grid-cols-2 flex flex justify-between gap-y-[35px]  gap-x-[135px] ">

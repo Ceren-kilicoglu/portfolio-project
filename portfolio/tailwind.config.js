@@ -10,7 +10,8 @@ export default {
         'yellw': '#CBF281',
         "bl": "#4731D3",
         "whit": "#FFFFFF",
-        "dark-bl": "#3730A3"
+        "dark-bl": "#3730A3",
+        "yell": "#E7FFAC"
 
       }
     },
