@@ -75,12 +75,12 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="green-container  h-[671px] w-[650px] left-[1008px] bg-yellw ">
-        <div className="theme-switch mx-8 my-8 flex items-center space-x-4 ">
-          <button className="theme-toggle w-16 h-7 bg-violet-400 dark:bg-g-700 rounded-full flex items-center p-1">
+      <div className="green-container  h-[671px] w-[710px] left-[1008px] bg-yellw ">
+        <div className="theme-switch mx-4 my-8 flex items-center space-x-2 ">
+          <button className="theme-toggle w-[55px] h-[24px] bg-[#8F88FF] dark:bg-g-700 rounded-full flex items-center p-1">
             <div className="theme-indicator w-4 h-4 bg-yellow-300 rounded-full"></div>
           </button>
-          <p className="text-indigo-600  font-semibold text-lg">{darkModeToggle.text}</p>
+          <p className="text-[#4731D3]  font-semibold text-[15px] leading-[18.15px] ">{darkModeToggle.text}</p>
         </div>
       </div>
     </div >

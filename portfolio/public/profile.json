@@ -7,6 +7,12 @@
             "residence": "Antalya",
             "education": "Akdeniz University, Germanistic, 2024",
             "preferredRole": "Frontend, UI"
+        },
+        "labels": {
+            "birth": "Birth",
+            "residence": "Residence City",
+            "education": "Education",
+            "preferredRole": "Preferred Role"
         }
     },
     "aboutMe": {

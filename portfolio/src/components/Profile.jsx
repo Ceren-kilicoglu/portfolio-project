@@ -12,51 +12,49 @@ const Profile = () => {
                 return response.json();
             })
             .then((data) => {
-                console.log("Veri başarıyla çekildi:", data); // Veri yüklendiğinde konsola yazdır
+                console.log("Veri başarıyla çekildi:", data);
                 setProfileData(data);
             })
             .catch((error) => console.error("Veri çekme hatası:", error));
     }, []);
 
     if (!profileData) {
-        return <div>Loading...</div>; // Veriler yüklenirken bir yükleme mesajı göster
+        return
     }
 
     const { profile, aboutMe, image } = profileData;
 
     return (
-        <div className='bg-bl h-96 flex '>
-
-            <div className=''>
-                <h1 className='text-yellw font-semibold text-5xl'>{profile.title}</h1>
-                <h2 className='text-white text-2xl'>{profile.subtitle}</h2>
-                <ul>
-                    <li>
-                        <span className='text-yellw font-medium text-medium'>Birth:</span>
-                        <span className='text-white font-medium text-medium'> {profile.details.birth}</span>
-                    </li>
-                    <li>
-                        <span className='text-yellw font-medium text-medium'>Residence City:</span>
-                        <span className='text-white font-medium text-medium'> {profile.details.residence}</span>
-                    </li>
-                    <li>
-                        <span className='text-yellw font-medium text-medium'>Education:</span>
-                        <span className='text-white font-medium text-medium'> {profile.details.education}</span>
-                    </li>
-                    <li>
-                        <span className='text-yellw font-medium text-medium'>Preferred Role:</span>
-                        <span className='text-white font-medium text-medium'> {profile.details.preferredRole}</span>
-                    </li>
-                </ul>
+        <div className='profile-container bg-bl  h-[552px] '>
+            <div className='profile-text w-[156px] h-[48px] absolute left-[240px] top-[1400px] '>
+                <h1 className='text-yellw font-semibold text-[48px]  leading-[48px]   '>{profile.title}</h1>
             </div>
-            <div>
-                <img src={image} alt="Profile" />
+            <div className='profile-info w-[960px] h[290.68px] flex gap-[35px] absolute top-[1490px] left-[240px]'>
+                <div className='w-[300px] h[290.68px]  flex  flex-col gap-[24px] '>
+                    <h2 className='w-[300px] h-[28px] text-[#FFFFFF] text-medium text-[30px] leading-[28px]'>{profile.subtitle}</h2>
+                    <div className='flex '>
+                        <div className='w-[101px] h-[222px] text-yellw font-semibold text-[16px] leading-[24px]'>
+                            <p>{profile.labels.birth}:</p>
+                            <p>{profile.labels.residence}:</p>
+                            <p>{profile.labels.education}:</p>
+                            <p>{profile.labels.preferredRole}:</p>
+                        </div>
+                        <div className=' w-[189px] h-[222px] text-[#FFFFFF] font-normal text-[16px] leading-[24px] '>
+                            <p>{profile.details.birth}</p>
+                            <p>{profile.details.residence}</p>
+                            <p>{profile.details.education}</p>
+                            <p>{profile.details.preferredRole}</p>
+                        </div>
+                    </div>
+                </div>
+                <div className=' '>
+                    <img className='rounded-[10px] w-[300px] h-[290.68px] object-cover ' src={image} alt="Profile" />
+                </div>
+                <div className=' w-[300px] h-[290.68px] '>
+                    <h2 className="w-[300px] h-[25px] text-[#FFFFFF] font-medium text-[30px] leading-[30px]">{aboutMe.title}</h2>
+                    <p className='w-[300px] h-[241.68px] text-[#FFFFFF]  font-normal text-[18px] leading-[27px]'>{aboutMe.description}</p>
+                </div>
             </div>
-            <div>
-                <h2 className="text-white text-2xl">{aboutMe.title}</h2>
-                <p className='text-white font-medium text-medium'>{aboutMe.description}</p>
-            </div>
-
         </div>
     );
 };

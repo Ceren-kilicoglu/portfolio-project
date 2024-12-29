@@ -16,24 +16,27 @@ const Skills = () => {
     }, []);
 
     return (
-        <div className="skills-container flex justify-center gap-x-52 pb-20 ">
-            <h2 className="text-indigo-700  font-semibold text-5xl">Skills</h2>
-            <div className=" grid grid-cols-2 gap-y-12 gap-36">
-                {logos.map((logo) => (
-                    <div
-                        key={logo.id}
-                        className="flex items-center gap-6 "
-                    >
-                        <img
-                            src={logo.logo}
-                            alt={logo.name}
-                            className="w-32 h-28 object-contain"
-                        />
-                        <p className="uppercase text-gray-500 font-semibold">{logo.name}</p>
-                    </div>
-                ))}
+        <div className="skills-container w-[1440px] h-[671px] ">
+            <div className=" flex justify-between w-[1000px] h-[430px] absolute top-[755px] left-[239px]  ">
+
+                <h2 className=" w-[128px] h-[58px] text-[#4832D3]  font-bold text-[48px] leading-[58.09px] ">Skills</h2>
+                <div className=" grid grid-cols-2 flex flex justify-between gap-y-[35px]  gap-x-[135px] ">
+                    {logos.map((logo) => (
+                        <div
+                            key={logo.id}
+                            className="flex items-center gap-6 "
+                        >
+                            <img
+                                src={logo.logo}
+                                alt={logo.name}
+                                className=" w-[120px] h-[120px] object-cover flex gap-6"
+                            />
+                            <p className="w-[146px] h-[36px] uppercase text-[#777777] font-medium text-[24px] leading-[36px] ">{logo.name}</p>
+                        </div>
+                    ))}
+                </div>
             </div>
-        </div>
+        </div >
     );
 };
 
