@@ -11,8 +11,9 @@ export default {
         "bl": "#4731D3",
         "whit": "#FFFFFF",
         "dark-bl": "#3730A3",
-        "yell": "#E7FFAC"
-
+        "yell": "#E7FFAC",
+        "d-bl": "#171043",
+        "d-bg": "#1A210B"
       }
     },
   },

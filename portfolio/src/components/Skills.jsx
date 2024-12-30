@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 const Skills = () => {
-    const [logos, setLogos] = useState([]);
+    const [data, setData] = useState({ title: "", logos: [] });
 
     useEffect(() => {
         fetch("/logos.json")
@@ -11,32 +11,32 @@ const Skills = () => {
                 }
                 return response.json();
             })
-            .then((data) => setLogos(data))
+            .then((fetchedData) => setData(fetchedData))
             .catch((error) => console.error("Veri çekme hatası:", error));
     }, []);
 
     return (
-        <div className="skills-container w-[1440px] h-[671px] overflow-hidden">
-            <div className=" flex justify-between w-[1000px] h-[430px] absolute top-[755px] left-[280px]  ">
-
-                <h2 className=" w-[128px] h-[58px] text-[#4832D3]  font-bold text-[48px] leading-[58.09px] ">Skills</h2>
-                <div className=" grid grid-cols-2 flex flex justify-between gap-y-[35px]  gap-x-[135px] ">
-                    {logos.map((logo) => (
-                        <div
-                            key={logo.id}
-                            className="flex items-center gap-6 "
-                        >
+        <div className="skills-container bg-[#F9F9F9] dark:bg-[#252128] h-[671px] overflow-hidden">
+            <div className="flex justify-between w-[1000px] h-[430px] absolute top-[755px] left-[280px]">
+                <h2 className="w-[128px] h-[58px] text-[#4832D3] dark:text-yellw font-bold text-[48px] leading-[58.09px]">
+                    {data.title}
+                </h2>
+                <div className="grid grid-cols-2 flex justify-between gap-y-[35px] gap-x-[135px]">
+                    {data.logos.map((logo) => (
+                        <div key={logo.id} className="flex items-center gap-6">
                             <img
                                 src={logo.logo}
                                 alt={logo.name}
-                                className=" w-[120px] h-[120px] object-cover flex gap-6"
+                                className="w-[120px] h-[120px] object-cover flex gap-6"
                             />
-                            <p className="w-[146px] h-[36px] uppercase text-[#777777] font-medium text-[24px] leading-[36px] ">{logo.name}</p>
+                            <p className="w-[146px] h-[36px] uppercase text-[#777777] dark:text-whit font-medium text-[24px] leading-[36px]">
+                                {logo.name}
+                            </p>
                         </div>
                     ))}
                 </div>
             </div>
-        </div >
+        </div>
     );
 };
 

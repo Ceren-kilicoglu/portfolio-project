@@ -1,26 +1,29 @@
-[
-    {
-        "title": "Workintech",
-        "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
-        "tags": [
-            "react",
-            "redux",
-            "vercel"
-        ],
-        "viewSite": "https://example.com/workintech",
-        "github": "https://github.com/example/workintech",
-        "image": "https://s3-alpha-sig.figma.com/img/ad50/81bf/69bb4825e42350e768340fdbec09d78b?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=MBwj7qUGOliAW2k8NnWpp9QEsdoOssfy3VAw09Wl11vYghevsBGkG4XkUbiTj--s5w2-r8TCv1ua8Ht-l7-bAAWy5myT5kz30yoS-6ldkXfUWMls~nYuQ9EKyGZEqZG2tjLi-LWM9jengfTlHoxyz8WWmqoAXEzYYIVwdJIm4aqywuiJVZ~Hrfs~chpV0VJ1enikBzdpExMzRi2TmAzqHIqc7t-ZPCpRO7NEyPaBAJ8sZ~qOTllXmVx4YTvdb39Z-YTm2~nbHLyThMFxjzDMUmcuZfwCtKwSpbnSlvPyZR9B413eUzslmT-Vd9ICPQTcjtWFmUksynWGFQi1brsd2w__"
-    },
-    {
-        "title": "Journey",
-        "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
-        "tags": [
-            "react",
-            "redux",
-            "vercel"
-        ],
-        "viewSite": "https://example.com/journey",
-        "github": "https://github.com/example/journey",
-        "image": "https://s3-alpha-sig.figma.com/img/600e/630b/a9370e031b441737654465d0f374af51?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pTAG57fj9AtMQIC4-62k6OU2oFBc9O3wpu0H4PBsZbAApqJVkfpl6a2czwJmJcJykDtzc~-RYjcEbtrSY~D6W7azPZKRknnFu2zYuVVdARhBvXaNkJVNav3DIoz331AlX9VxrYQJeFJN5fpVWKceVUDpyQHHVBwS~fqB4PH4iiJTH~P5FC2gfs5tD7bHiPp9PUyyr20ZDNG768oTosH8owE1ef5-t-Aa-3a1mLgJtwGbnKlDwn820-BhAs4015Tz1iKKjAXeTOazdr-ONl8rNsK~hgvtrYNPwepmFafz~y4j0XXD-zMAmuyUC9~zep3SD8ZdCMECpiYrf4D~upPRnw__"
-    }
-]
+{
+    "h1": "Projects",
+    "projects": [
+        {
+            "title": "Workintech",
+            "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+            "tags": [
+                "react",
+                "redux",
+                "vercel"
+            ],
+            "viewSite": "https://example.com/workintech",
+            "github": "https://github.com/example/workintech",
+            "image": "https://s3-alpha-sig.figma.com/img/ad50/81bf/69bb4825e42350e768340fdbec09d78b?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Fi6~me5JtqsnqkG-zMS1wVpF9xHXSBCf2qqqcvYSz1WtaNBh7ZWTRnB-vbrQxDCRcbJ4FJfAQLB91TFFeOv1B8SlU83g2qrbR3wtKPkwrKmjsN-IWro1uh--um--PkmH091RlNBDOx8w3itJhnaPHq8jWUmkIf78QGZvreJGTuKFgmn-9cJ2-9pr4qB6HWPZ1L8zdkzKvQmTkErRASssxndAQ5XFNUtnOtvnIIXqvb5yp8C8rsZoru3-5Man52mB5cBD5ATArjhYxktTtGDmvTztJilRWT6LEqHOpjaomrEdfT94fzfl~tvLT4T55J6cWPSw21DaPYffJ4~puCjoJw__"
+        },
+        {
+            "title": "Journey",
+            "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+            "tags": [
+                "react",
+                "redux",
+                "vercel"
+            ],
+            "viewSite": "https://example.com/journey",
+            "github": "https://github.com/example/journey",
+            "image": "https://s3-alpha-sig.figma.com/img/600e/630b/a9370e031b441737654465d0f374af51?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=k3kym7YmXcz28Vlb4oJjfy3ORjjeSVZkQXhqhAyGYRxaHfYJenZdqx6jU2QwajWA0HUBpcL3GL79XP8sMpkIsBWXzUYL8pVFEfzvb-QUGPLsM8UESkn6P5013t9~GnOPx~t4-FfQhMKReN-j-nmV3-YjcWcRQeY0JS99IwkMX5KwSxKnk72tcVfW1mSy1EKN6LnXXHYNXxOobLSaLRglOzGHEbjpXpn1zqrcn1EC2uwHmKyFXwURzUNOBwGNfwPTW-Z6bqvXP35bIBhGSdPqtrh-4p8bRM2ZG9jF8P3hsfu9FGpUKTeLdZUX5GK4zdoB5WrVXwIt~WxqHtDG4B9mNA__"
+        }
+    ]
+}

@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from 'react';
-
+import React, { useEffect, useState } from "react";
 
 const Projects = () => {
-    const [projects, setProjects] = useState([]);
+    const [projectsData, setProjectsData] = useState(null);
 
     useEffect(() => {
         fetch("/projects.json")
@@ -14,36 +13,43 @@ const Projects = () => {
             })
             .then((data) => {
                 console.log("Data fetched successfully:", data);
-                setProjects(data);
+                setProjectsData(data);
             })
             .catch((error) => console.error("Error fetching data:", error));
     }, []);
 
+    if (!projectsData) {
+        return <div>Loading...</div>; // Yüklenme durumunu göster
+    }
+
     return (
-        <div className="projects-container bg-yellw h-[999px] flex flex-col items-center justify-center overflow-hidden">
-            <h1 className="text-[48px] font-bold text-bl leading-[48px] mb-12 -ml-[775px] ">Projects</h1>
+        <div className="projects-container bg-yellw dark:bg-d-bg h-[999px] flex flex-col items-center justify-center overflow-hidden">
+            <h1 className="text-[48px] font-bold text-bl dark:text-yellw leading-[48px] mb-12 -ml-[775px] ">
+                {projectsData.h1}
+            </h1>
             <div className="flex flex-col gap-16 items-center">
-                {projects.map((project, index) => (
+                {projectsData.projects.map((project, index) => (
                     <div
                         key={index}
-                        className="project-card bg-whit shadow-lg rounded-[12px] overflow-hidden w-[960px] h-[360px] flex items-start "
+                        className="project-card bg-whit dark:bg-[#2B2727] shadow-lg rounded-[12px] overflow-hidden w-[960px] h-[360px] flex items-start "
                     >
-                        {/* Görsel Alanı */}
                         <img
                             src={project.image}
                             alt={project.title}
                             className="w-[360px] h-full object-cover"
                         />
-
-                        {/* İçerik Alanı */}
                         <div className="p-12 flex flex-col gap-4 flex-grow">
-                            <h2 className="text-[32px] font-bold text-[#4338CA] leading-[32px]">{project.title}</h2>
-                            <p className="text-[#383838] text-[16px] font-normal leading-[20px]">{project.description}</p>
+                            <h2 className="text-[32px] font-bold text-[#4338CA] dark:text-[#C1BAED] leading-[32px]">
+                                {project.title}
+                            </h2>
+                            <p className="text-[#383838] dark:text-whit text-[16px] font-normal leading-[20px]">
+                                {project.description}
+                            </p>
                             <div className="flex flex-wrap gap-2">
-                                {project.tags.map((tag, index) => (
+                                {project.tags.map((tag, idx) => (
                                     <span
-                                        key={index}
-                                        className="px-5 py-2 bg-[#4338CA] text-white text-sm font-medium rounded-[23px] "
+                                        key={idx}
+                                        className="px-5 py-2 bg-bl dark:bg-[#8173DA] text-whit text-[14px] font-medium rounded-[23px] "
                                     >
                                         {tag}
                                     </span>
@@ -54,7 +60,7 @@ const Projects = () => {
                                     href={project.viewSite}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="underline"
+                                    className="underline text-[#120B39] dark:text-yellw text-[16px] "
                                 >
                                     View Site
                                 </a>
@@ -62,7 +68,7 @@ const Projects = () => {
                                     href={project.github}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="underline"
+                                    className="underline text-[#120B39] dark:text-yellw text-[16px]"
                                 >
                                     Github
                                 </a>
@@ -72,10 +78,7 @@ const Projects = () => {
                 ))}
             </div>
         </div>
-
-    )
-
+    );
 };
 
 export default Projects;
-

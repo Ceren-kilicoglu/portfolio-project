@@ -25,7 +25,7 @@ const Profile = () => {
     const { profile, aboutMe, image } = profileData;
 
     return (
-        <div className='profile-container bg-bl  h-[552px] overflow-hidden '>
+        <div className='profile-container bg-bl dark:bg-d-bl h-[552px] overflow-hidden '>
             <div className='profile-text w-[156px] h-[48px] absolute left-[280px] top-[1400px] '>
                 <h1 className='text-yellw font-semibold text-[48px]  leading-[48px]   '>{profile.title}</h1>
             </div>
