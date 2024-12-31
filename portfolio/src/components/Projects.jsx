@@ -19,7 +19,7 @@ const Projects = () => {
     }, []);
 
     if (!projectsData) {
-        return <div>Loading...</div>; // Yüklenme durumunu göster
+        return <div>Loading...</div>;
     }
 
     return (
