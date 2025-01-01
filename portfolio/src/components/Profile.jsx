@@ -35,18 +35,20 @@ const Profile = () => {
                 <div className='w-[300px] h[290.68px]  flex flex-col gap-[35px] '>
                     <h2 className='w-[300px] h-[28px] text-[#FFFFFF] text-medium text-[30px] leading-[28px]'>{profile.subtitle}</h2>
                     <div className='flex '>
-                        {/* Sol taraf */}
-                        <div className='w-[101px] h-[222px] text-yellw font-semibold text-[16px] leading-[24px] flex flex-col gap-[24px]'>
+
+                        <div className={`text-yellw font-semibold text-[16px] leading-[24px] flex flex-col gap-[24px] ${language === "tr" ? 'w-[120px] h-[222px]' : 'w-[105px] h-[222px]'}`}>
+
+
                             <p>{profile.labels.birth}:</p>
                             <p>{profile.labels.residence}:</p>
                             <p>{profile.labels.education}:</p>
                             <p>{profile.labels.preferredRole}:</p>
                         </div>
-                        {/* Sağ taraf */}
-                        <div className='w-[189px] h-[222px] text-whit font-normal text-[16px] leading-[24px] flex flex-col gap-[24px]'>
+
+                        <div className={`w-[189px] h-[222px] text-whit font-normal text-[16px]  flex flex-col  ${language === "tr" ? "gap-[24px] leading-[24px]" : "gap-[25px] leading-[24px]"}`}>
                             <p>{profile.details.birth}</p>
                             <p>{profile.details.residence}</p>
-                            <p>{profile.details.education}</p>
+                            <p className='leading-[24px]'>{profile.details.education}</p>
                             <p>{profile.details.preferredRole}</p>
                         </div>
                     </div>

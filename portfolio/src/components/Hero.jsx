@@ -33,10 +33,7 @@ const Hero = () => {
   return (
     <div className={`hero-container flex overflow-hidden ${darkMode ? "dark" : ""}`}>
       <div className="hero-blue-section h-[671px] w-[1550px] bg-bl dark:bg-d-bl">
-
-
-
-        {/* Profile Information */}
+        {/* Profile  */}
         <div className="hero-name-section w-[960px] h-[72px] absolute top-[37px] left-[280px]">
           <h2 className="hero-name  text-[32px] leading-[72px] text-yellw font-bold">
             {profile.name}
@@ -83,7 +80,7 @@ const Hero = () => {
 
       <div className="green-container h-[671px] w-[710px] left-[1008px] bg-yellw dark:bg-d-bg   ">
         <div className="flex ">
-          {/* Language Toggle Button */}
+          {/* Language  Button */}
           <button
             onClick={toggleLanguage}
             className="language-toggle w-fit  border-none cursor-pointer absolute left-[890px] top-[35px] font-semibold text-[15px] leading-[18.15px]"
@@ -117,7 +114,7 @@ const Hero = () => {
               </span>
             )}
           </button>
-          {/* Theme Toggle */}
+          {/* Theme Button */}
           <div className="theme-switch flex items-center space-x-3 absolute right-[295px] top-[32px]">
             <button
               className="theme-toggle w-[55px] h-[24px] bg-[#8F88FF] dark:bg-[#3A3A3A] rounded-full flex items-center p-1"
