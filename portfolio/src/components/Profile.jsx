@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const Profile = () => {
     const [profileData, setProfileData] = useState(null);
+    const { language } = useLanguage();
 
     useEffect(() => {
         fetch("/profile.json")
@@ -12,14 +14,14 @@ const Profile = () => {
                 return response.json();
             })
             .then((data) => {
-                console.log("Veri başarıyla çekildi:", data);
-                setProfileData(data);
+                console.log("Data fetched successfully:", data);
+                setProfileData(data[language]);
             })
-            .catch((error) => console.error("Veri çekme hatası:", error));
-    }, []);
+            .catch((error) => console.error("Error fetching profile data:", error));
+    }, [language]);
 
     if (!profileData) {
-        return
+        return <div>Loading...</div>;
     }
 
     const { profile, aboutMe, image } = profileData;

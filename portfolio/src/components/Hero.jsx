@@ -11,15 +11,21 @@ const Hero = () => {
 
   useEffect(() => {
     fetch("/hero.json")
-      .then((response) => response.json())
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return response.json();
+      })
       .then((data) => {
-        setHeroData(data[language]); // Aktif dile göre veri
+        console.log("Data fetched successfully:", data);
+        setHeroData(data[language]);
       })
       .catch((error) => console.error("Error fetching hero data:", error));
-  }, [language]); // Dil değiştiğinde yeniden yükleme
+  }, [language]);
 
   if (!heroData) {
-    return <div>Loading...</div>;
+    return
   }
 
   const { profile, buttons, darkModeToggle } = heroData;
@@ -27,40 +33,7 @@ const Hero = () => {
   return (
     <div className={`hero-container flex overflow-hidden ${darkMode ? "dark" : ""}`}>
       <div className="hero-blue-section h-[671px] w-[1550px] bg-bl dark:bg-d-bl">
-        {/* Language Toggle Button */}
-        <button
-          onClick={toggleLanguage}
-          className="language-toggle  w-[138px] mt-[32px]   border-none cursor-pointer"
-        >
-          {language === "en" ? (
-            <span>
-              <span
-                className={darkMode ? "text-[#8F88FF]" : "text-[#CBF281]"}
-              >
-                TÜRKÇE
-              </span>
-              <span
-                className={darkMode ? "text-[#777777]" : "text-[#D9D9D9]"}
-              >
-                'YE GEÇ
-              </span>
-            </span>
-          ) : (
-            <span>
-              <span
-                className={darkMode ? "text-[#777777]" : "text-[#D9D9D9]"}
-              >
-                GO
-              </span>
-              <span
-                className={darkMode ? "text-[#8F88FF]" : "text-[#CBF281]"}
-              >
-                {" "}
-                ENGLISH
-              </span>
-            </span>
-          )}
-        </button>
+
 
 
         {/* Profile Information */}
@@ -100,28 +73,66 @@ const Hero = () => {
           </div>
           <div className="pl-[50px]">
             <img
-              src={profile.image} // Görsel JSON'dan alınacak
+              src={profile.image}
               alt="Hero"
               className="hero-image h-[375.89px] w-[350px] rounded-[18px] object-cover"
             />
           </div>
         </div>
       </div>
-      {/* Theme Toggle */}
-      <div className="green-container h-[671px] w-[710px] left-[1008px] bg-yellw dark:bg-d-bg">
-        <div className="theme-switch mx-8 my-8 flex items-center space-x-4">
+
+      <div className="green-container h-[671px] w-[710px] left-[1008px] bg-yellw dark:bg-d-bg   ">
+        <div className="flex ">
+          {/* Language Toggle Button */}
           <button
-            className="theme-toggle w-[55px] h-[24px] bg-[#8F88FF] dark:bg-[#3A3A3A] rounded-full flex items-center p-1"
-            onClick={toggleDarkMode}
+            onClick={toggleLanguage}
+            className="language-toggle w-fit  border-none cursor-pointer absolute left-[890px] top-[35px] font-semibold text-[15px] leading-[18.15px]"
           >
-            <div
-              className={`theme-indicator w-4 h-4 bg-yellow-300 rounded-full transition-transform duration-300 ease-in-out transform ${darkMode ? "translate-x-[31px] rotate-[-180deg]" : "translate-x-0"
-                }`}
-            ></div>
+            {language === "en" ? (
+              <span>
+                <span
+                  className={darkMode ? "text-[#8F88FF]" : "text-[#CBF281]"}
+                >
+                  TÜRKÇE
+                </span>
+                <span
+                  className={darkMode ? "text-[#777777]" : "text-[#D9D9D9]"}
+                >
+                  'YE GEÇ
+                </span>
+              </span>
+            ) : (
+              <span>
+                <span
+                  className={darkMode ? "text-[#777777]" : "text-[#D9D9D9]"}
+                >
+                  GO
+                </span>
+                <span
+                  className={darkMode ? "text-[#8F88FF]" : "text-[#CBF281]"}
+                >
+                  {" "}
+                  ENGLISH
+                </span>
+              </span>
+            )}
           </button>
-          <p className="text-[#4731D3] dark:text-[#D9D9D9] font-semibold text-[15px] leading-[18.15px]">
-            {darkMode ? "LIGHT MODE" : darkModeToggle.text}
-          </p>
+          {/* Theme Toggle */}
+          <div className="theme-switch flex items-center space-x-3 absolute right-[295px] top-[32px]">
+            <button
+              className="theme-toggle w-[55px] h-[24px] bg-[#8F88FF] dark:bg-[#3A3A3A] rounded-full flex items-center p-1"
+              onClick={toggleDarkMode}
+            >
+              <div
+                className={`theme-indicator w-4 h-4 bg-[#FFE86E] dark:[#FFE86E] rounded-full transition-transform duration-300 ease-in-out transform ${darkMode ? "translate-x-0 rotate-[180deg]" : "translate-x-[31px] rotate-0"
+                  }`}
+              ></div>
+            </button>
+            <p className="text-[#4731D3] dark:text-[#D9D9D9] font-semibold text-[15px] leading-[18.15px]">
+              {darkMode ? "LIGHT MODE" : darkModeToggle.text}
+            </p>
+          </div>
+
         </div>
       </div>
     </div>

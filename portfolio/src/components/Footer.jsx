@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faDribbble, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { useLanguage } from '../contexts/LanguageContext';
 
 
 const Footer = () => {
     const [contactData, setContactData] = useState(null);
+    const { language } = useLanguage();
 
     useEffect(() => {
         fetch("/footer.json")
@@ -15,11 +17,11 @@ const Footer = () => {
                 return response.json();
             })
             .then((data) => {
-                console.log("Veri başarıyla çekildi:", data);
-                setContactData(data);
+                console.log("Data fetched successfully:", data);
+                setContactData(data[language]);
             })
-            .catch((error) => console.error("Veri çekme hatası:", error));
-    }, []);
+            .catch((error) => console.error("Error fetching footer data:", error));
+    }, [language]);
 
     if (!contactData) {
         return <div>Loading...</div>;

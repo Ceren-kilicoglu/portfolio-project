@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
+import { useLanguage } from '../contexts/LanguageContext';
 
 const Projects = () => {
     const [projectsData, setProjectsData] = useState(null);
+    const { language } = useLanguage();
 
     useEffect(() => {
         fetch("/projects.json")
@@ -13,10 +15,10 @@ const Projects = () => {
             })
             .then((data) => {
                 console.log("Data fetched successfully:", data);
-                setProjectsData(data);
+                setProjectsData(data[language]);
             })
-            .catch((error) => console.error("Error fetching data:", error));
-    }, []);
+            .catch((error) => console.error("Error fetching projects data:", error));
+    }, [language]);
 
     if (!projectsData) {
         return <div>Loading...</div>;
@@ -24,7 +26,7 @@ const Projects = () => {
 
     return (
         <div className="projects-container bg-yellw dark:bg-d-bg h-[999px] flex flex-col items-center justify-center overflow-hidden">
-            <h1 className="text-[48px] font-bold text-bl dark:text-yellw leading-[48px] mb-12 -ml-[775px] ">
+            <h1 className="text-[48px] font-bold text-bl dark:text-yellw leading-[48px] mb-12 -ml-[785px] ">
                 {projectsData.h1}
             </h1>
             <div className="flex flex-col gap-16 items-center">
