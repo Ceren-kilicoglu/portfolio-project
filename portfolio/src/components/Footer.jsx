@@ -24,7 +24,7 @@ const Footer = () => {
     }, [language]);
 
     if (!contactData) {
-        return <div>Loading...</div>;
+        return
     }
 
     const { heading, prompt, email, socialIcons } = contactData;

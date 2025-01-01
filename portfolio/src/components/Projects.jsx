@@ -21,7 +21,7 @@ const Projects = () => {
     }, [language]);
 
     if (!projectsData) {
-        return <div>Loading...</div>;
+        return
     }
 
     return (

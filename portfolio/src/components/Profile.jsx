@@ -21,7 +21,7 @@ const Profile = () => {
     }, [language]);
 
     if (!profileData) {
-        return <div>Loading...</div>;
+        return
     }
 
     const { profile, aboutMe, image } = profileData;
