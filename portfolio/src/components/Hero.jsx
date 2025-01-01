@@ -31,7 +31,7 @@ const Hero = () => {
   const { profile, buttons, darkModeToggle } = heroData;
 
   return (
-    <div className={`hero-container flex overflow-hidden ${darkMode ? "dark" : ""}`}>
+    <div className="hero-container flex overflow-hidden">
       <div className="hero-blue-section h-[671px] w-[1550px] bg-bl dark:bg-d-bl">
         {/* Profile  */}
         <div className="hero-name-section w-[960px] h-[72px] absolute top-[37px] left-[280px]">
@@ -95,7 +95,7 @@ const Hero = () => {
                 <span
                   className={darkMode ? "text-[#777777]" : "text-[#D9D9D9]"}
                 >
-                  'YE GEÇ
+                  &apos;YE GEÇ
                 </span>
               </span>
             ) : (
