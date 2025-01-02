@@ -32,7 +32,7 @@ const Hero = () => {
 
   return (
     <div className="hero-container flex overflow-hidden">
-      <div className="hero-blue-section h-[671px] w-[1550px] bg-bl dark:bg-d-bl">
+      <div className="hero-blue-section  h-[671px] w-[1550px] bg-bl dark:bg-d-bl">
         {/* Profile  */}
         <div className="hero-name-section w-[960px] h-[72px] absolute top-[37px] left-[280px]">
           <h2 className="hero-name  text-[32px] leading-[72px] text-yellw font-bold">
@@ -52,7 +52,7 @@ const Hero = () => {
                 id="github"
                 type="button"
                 onClick={() => window.open(buttons.github.link, "_blank")}
-                className="social-button bg-white dark:bg-gray-800 dark:border-whit dark:border-[1px] text-xl text-dark-bl dark:text-gray-300 font-medium pt-3 pr-5 pb-3 pl-3 rounded shadow hover:bg-gray-100"
+                className="social-button bg-white dark:bg-gray-800 dark:border-whit dark:border-[1px] text-xl text-dark-bl dark:text-gray-300 font-medium pt-3 pr-5 pb-3 pl-3 rounded shadow hover:bg-gray-100 dark:hover:bg-gray-900"
               >
                 <FontAwesomeIcon icon={faGithub} size="lg" />
                 <span className="pl-3">{buttons.github.text}</span>
@@ -61,7 +61,7 @@ const Hero = () => {
                 id="linkedin"
                 type="button"
                 onClick={() => window.open(buttons.linkedin.link, "_blank")}
-                className="social-button bg-white dark:bg-gray-800 dark:border-whit dark:border-[1px] text-xl text-dark-bl dark:text-gray-300 font-medium pt-3 pr-5 pb-3 pl-3 rounded shadow hover:bg-gray-100"
+                className="social-button bg-white dark:bg-gray-800 dark:border-whit dark:border-[1px] text-xl text-dark-bl dark:text-gray-300 font-medium pt-3 pr-5 pb-3 pl-3 rounded shadow hover:bg-gray-100 dark:hover:bg-gray-900 "
               >
                 <FontAwesomeIcon icon={faLinkedinIn} size="lg" />
                 <span className="pl-3">{buttons.linkedin.text}</span>

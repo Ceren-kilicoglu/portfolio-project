@@ -38,7 +38,7 @@ const Projects = () => {
                         <img
                             src={project.image}
                             alt={project.title}
-                            className="w-[360px] h-full object-cover"
+                            className="w-[340px] h-full object-cover"
                         />
                         <div className="p-12 flex flex-col gap-4 flex-grow">
                             <h2 className="text-[32px] font-bold text-[#4338CA] dark:text-[#C1BAED] leading-[32px]">

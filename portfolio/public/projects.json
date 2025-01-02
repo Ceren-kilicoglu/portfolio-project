@@ -3,28 +3,25 @@
         "h1": "Projects",
         "projects": [
             {
-                "title": "Workintech",
-                "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+                "title": "Pizza Project",
+                "description": "In the second month of my Frontend Developer course, I developed a Pizza Ordering Application using React. In this project, users can select pizzas from the menu and customize their size and ingredients. The project helped me learn and practice the fundamental building blocks of React (state, props, component structure) and allowed me to design a modern, user-friendly interface.",
                 "tags": [
-                    "react",
-                    "redux",
-                    "vercel"
+                    "react"
                 ],
-                "viewSite": "https://example.com/workintech",
-                "github": "https://github.com/example/workintech",
-                "image": "https://s3-alpha-sig.figma.com/img/ad50/81bf/69bb4825e42350e768340fdbec09d78b?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Fi6~me5JtqsnqkG-zMS1wVpF9xHXSBCf2qqqcvYSz1WtaNBh7ZWTRnB-vbrQxDCRcbJ4FJfAQLB91TFFeOv1B8SlU83g2qrbR3wtKPkwrKmjsN-IWro1uh--um--PkmH091RlNBDOx8w3itJhnaPHq8jWUmkIf78QGZvreJGTuKFgmn-9cJ2-9pr4qB6HWPZ1L8zdkzKvQmTkErRASssxndAQ5XFNUtnOtvnIIXqvb5yp8C8rsZoru3-5Man52mB5cBD5ATArjhYxktTtGDmvTztJilRWT6LEqHOpjaomrEdfT94fzfl~tvLT4T55J6cWPSw21DaPYffJ4~puCjoJw__"
+                "viewSite": "https://fsweb-s8-challenge-pizza-jet.vercel.app/",
+                "github": "https://github.com/Ceren-kilicoglu/fsweb-s8-challenge-pizza",
+                "image": "./src/img/piz.jpeg"
             },
             {
-                "title": "Journey",
-                "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+                "title": "Witflix Project",
+                "description": "In the first month of my Frontend Developer course, I developed a project called Witflix using HTML and CSS. This project aimed to create a basic design inspired by the Netflix interface. Through this, I learned to structure web pages with HTML and style them with CSS, practicing fundamental web design principles.",
                 "tags": [
-                    "react",
-                    "redux",
-                    "vercel"
+                    "html",
+                    "css"
                 ],
-                "viewSite": "https://example.com/journey",
-                "github": "https://github.com/example/journey",
-                "image": "https://s3-alpha-sig.figma.com/img/600e/630b/a9370e031b441737654465d0f374af51?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=k3kym7YmXcz28Vlb4oJjfy3ORjjeSVZkQXhqhAyGYRxaHfYJenZdqx6jU2QwajWA0HUBpcL3GL79XP8sMpkIsBWXzUYL8pVFEfzvb-QUGPLsM8UESkn6P5013t9~GnOPx~t4-FfQhMKReN-j-nmV3-YjcWcRQeY0JS99IwkMX5KwSxKnk72tcVfW1mSy1EKN6LnXXHYNXxOobLSaLRglOzGHEbjpXpn1zqrcn1EC2uwHmKyFXwURzUNOBwGNfwPTW-Z6bqvXP35bIBhGSdPqtrh-4p8bRM2ZG9jF8P3hsfu9FGpUKTeLdZUX5GK4zdoB5WrVXwIt~WxqHtDG4B9mNA__"
+                "viewSite": "https://wit-flix-1024.vercel.app/",
+                "github": "https://github.com/Ceren-kilicoglu/WitFlix-1024",
+                "image": "./src/img/witflix.jpeg"
             }
         ]
     },
@@ -32,28 +29,25 @@
         "h1": "Projeler",
         "projects": [
             {
-                "title": "Workintech",
-                "description": "Kullanıcılarınızın hangi çerezleri kabul edip etmeyeceğini seçebileceği basit, özelleştirilebilir ve minimal bir çerez eklentisi. Vanilla JS, SCSS ve Parcel Bundler ile oluşturulmuş olup, NPM paketi olarak mevcuttur. Git deposu, kod ve tema üzerinde her türlü özelleştirmeye olanak tanır.",
+                "title": "Pizza Projesi",
+                "description": "Frontend Developer kursumun 2. ayında, React kullanarak bir Pizza Sipariş Uygulaması geliştirdim. Bu projede kullanıcılar, menüden pizza seçip boyut ve malzemeleri özelleştirebiliyor. Proje, React'in temel yapı taşlarını (state, props, component yapısı) öğrenip pratik etmemi sağladı ve modern, kullanıcı dostu bir arayüz tasarlamama olanak tanıdı.",
                 "tags": [
-                    "react",
-                    "redux",
-                    "vercel"
+                    "react"
                 ],
-                "viewSite": "https://example.com/workintech",
-                "github": "https://github.com/example/workintech",
-                "image": "https://s3-alpha-sig.figma.com/img/ad50/81bf/69bb4825e42350e768340fdbec09d78b?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Fi6~me5JtqsnqkG-zMS1wVpF9xHXSBCf2qqqcvYSz1WtaNBh7ZWTRnB-vbrQxDCRcbJ4FJfAQLB91TFFeOv1B8SlU83g2qrbR3wtKPkwrKmjsN-IWro1uh--um--PkmH091RlNBDOx8w3itJhnaPHq8jWUmkIf78QGZvreJGTuKFgmn-9cJ2-9pr4qB6HWPZ1L8zdkzKvQmTkErRASssxndAQ5XFNUtnOtvnIIXqvb5yp8C8rsZoru3-5Man52mB5cBD5ATArjhYxktTtGDmvTztJilRWT6LEqHOpjaomrEdfT94fzfl~tvLT4T55J6cWPSw21DaPYffJ4~puCjoJw__"
+                "viewSite": "https://fsweb-s8-challenge-pizza-jet.vercel.app/",
+                "github": "https://github.com/Ceren-kilicoglu/fsweb-s8-challenge-pizza",
+                "image": "./src/img/piz.jpeg"
             },
             {
-                "title": "Journey",
-                "description": "Kullanıcılarınızın hangi çerezleri kabul edip etmeyeceğini seçebileceği basit, özelleştirilebilir ve minimal bir çerez eklentisi. Vanilla JS, SCSS ve Parcel Bundler ile oluşturulmuş olup, NPM paketi olarak mevcuttur. Git deposu, kod ve tema üzerinde her türlü özelleştirmeye olanak tanır.",
+                "title": "Witflix Projesi",
+                "description": "Frontend Developer kursumun 1. ayında HTML ve CSS ile Witflix adında bir proje geliştirdim. Bu proje, Netflix arayüzünü temel alarak bir tasarım oluşturmayı hedefliyordu. Çalışma sırasında HTML yapısını kurmayı ve CSS ile stil vermeyi öğrenerek, temel web tasarım prensiplerini pratik ettim.",
                 "tags": [
-                    "react",
-                    "redux",
-                    "vercel"
+                    "html",
+                    "css"
                 ],
-                "viewSite": "https://example.com/journey",
-                "github": "https://github.com/example/journey",
-                "image": "https://s3-alpha-sig.figma.com/img/600e/630b/a9370e031b441737654465d0f374af51?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=k3kym7YmXcz28Vlb4oJjfy3ORjjeSVZkQXhqhAyGYRxaHfYJenZdqx6jU2QwajWA0HUBpcL3GL79XP8sMpkIsBWXzUYL8pVFEfzvb-QUGPLsM8UESkn6P5013t9~GnOPx~t4-FfQhMKReN-j-nmV3-YjcWcRQeY0JS99IwkMX5KwSxKnk72tcVfW1mSy1EKN6LnXXHYNXxOobLSaLRglOzGHEbjpXpn1zqrcn1EC2uwHmKyFXwURzUNOBwGNfwPTW-Z6bqvXP35bIBhGSdPqtrh-4p8bRM2ZG9jF8P3hsfu9FGpUKTeLdZUX5GK4zdoB5WrVXwIt~WxqHtDG4B9mNA__"
+                "viewSite": "https://wit-flix-1024.vercel.app/",
+                "github": "https://github.com/Ceren-kilicoglu/WitFlix-1024",
+                "image": "./src/img/witflix.jpeg"
             }
         ]
     }
